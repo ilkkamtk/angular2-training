@@ -20,7 +20,9 @@ export class TodoComponent implements OnInit {
 
   @Input() item: any;
   @Input() index: number;
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit() {
   }

@@ -1,7 +1,7 @@
 /* tslint:disable:no-unused-variable */
 
-import { TestBed, async, inject } from '@angular/core/testing';
-import { TodoService } from './todo.service';
+import {TestBed, async, inject} from '@angular/core/testing';
+import {TodoService} from './todo.service';
 
 describe('Service: Todo', () => {
   beforeEach(() => {

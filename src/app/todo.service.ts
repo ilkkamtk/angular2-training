@@ -1,20 +1,21 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 
 @Injectable()
 export class TodoService {
 
   private items: any[] = [
-    { name: 'Do the Laundry', done: false },
-    { name: 'Clean my room', done: false }
+    {name: 'Do the Laundry', done: false},
+    {name: 'Clean my room', done: false}
   ];
 
-  constructor() { }
+  constructor() {
+  }
 
   getItems() {
     return this.items;
   }
 
-  getItemByIndex(index: number){
+  getItemByIndex(index: number) {
     return this.items[index];
   }
 }

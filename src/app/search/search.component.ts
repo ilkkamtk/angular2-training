@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {SearchService} from "./search.service";
 import {Observable} from "rxjs";
 import {FormControl} from "@angular/forms";
@@ -13,7 +13,8 @@ export class SearchComponent implements OnInit {
   items: Observable<any[]>;
   private control = new FormControl();
 
-  constructor(private searchService: SearchService) { }
+  constructor(private searchService: SearchService) {
+  }
 
   ngOnInit() {
     this.items = this.control.valueChanges

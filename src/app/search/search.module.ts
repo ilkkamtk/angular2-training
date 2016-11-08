@@ -1,6 +1,6 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { SearchComponent } from './search.component';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {SearchComponent} from './search.component';
 import {RouterModule} from "@angular/router";
 import {HttpModule} from "@angular/http";
 import {SearchService} from "./search.service";
@@ -23,4 +23,5 @@ const routes = [
   declarations: [SearchComponent],
   providers: [SearchService]
 })
-export class SearchModule { }
+export class SearchModule {
+}

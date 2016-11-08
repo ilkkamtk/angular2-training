@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
 import {TodoService} from "../todo.service";
 
 @Component({
@@ -11,7 +11,8 @@ export class EditTodoComponent implements OnInit {
   index: number;
   item: any;
 
-  constructor(private route: ActivatedRoute, private todoService: TodoService) { }
+  constructor(private route: ActivatedRoute, private todoService: TodoService) {
+  }
 
   ngOnInit() {
     this.route.params.subscribe((params: any) => {
