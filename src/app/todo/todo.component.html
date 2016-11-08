@@ -1,0 +1,10 @@
+<li
+    (mouseenter)="item.active = true"
+    (mouseleave)="item.active = false"
+    (click)="item.done = !item.done"
+    [class.active]="item.active"
+    [class.done]="item.done"
+    [@doneTrigger]="item.done ? 'done' : 'notDone'">
+  {{ item.name }} {{ item.done ? '&#10004;' : '&#10026;' }}
+</li>
+  <a [routerLink]="['/edit-todo', index]">Edit</a>

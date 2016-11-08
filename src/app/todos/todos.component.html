@@ -1,0 +1,9 @@
+<h1>TODOs component</h1>
+<p>
+  TODO items count: {{ items.length }}
+</p>
+<ul>
+  <app-todo *ngFor="let data of items; let i = index;" [item]="data" [index]="i"></app-todo>
+</ul>
+<input type="text" [(ngModel)]="todo" placeholder="New TODO">
+<button (click)="addTodo();">Add</button>

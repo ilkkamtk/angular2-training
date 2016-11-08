@@ -1,0 +1,14 @@
+<div>
+  <label for="haku">GitHub Search</label>
+  <input
+    id="haku"
+    type="text"
+    placeholder="search..."
+    [formControl]="control"
+    #term>
+  <ul>
+    <li *ngFor="let item of items | async">
+      <a href="{{ item.html_url }}">{{ item.name }}, {{ item.owner.login }}</a>
+    </li>
+  </ul>
+</div>

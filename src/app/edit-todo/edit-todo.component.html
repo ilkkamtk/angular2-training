@@ -1,0 +1,14 @@
+<div>
+  <form #itemForm="ngForm">
+    <input
+      type="text"
+      [(ngModel)]="item.name"
+      name="name"
+      minlength="4"
+      required
+      #nameControl="ngModel">
+    <div class="error" *ngIf="nameControl.invalid && nameControl.touched">4 merkkiä pliis</div>
+    <button [disabled]="itemForm.invalid">Save</button>
+  </form>
+  <a [routerLink]="'/todos'">Etusivu</a>
+</div>

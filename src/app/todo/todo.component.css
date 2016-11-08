@@ -1,0 +1,34 @@
+li {
+  color: #FFF;
+  font-weight: 600;
+  font-size: 1.5em;
+  background-color: cadetblue;
+  border-radius: 6px;
+  line-height: 2em;
+  border: 1px #ccc solid;
+  text-align: center;
+}
+
+.active {
+  background-color: cornflowerblue;
+}
+
+.done {
+  color: #ccc;
+  font-weight: normal;
+  text-decoration: line-through;
+}
+
+a {
+  display: inline-block;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  border-radius: 6px;
+  text-decoration: none;
+  background-color: darkseagreen;
+  padding: 0.3em;
+  color: #fff;
+  float: right;
+  margin: -3em 1em 0 0;
+  z-index: 99999;
+}

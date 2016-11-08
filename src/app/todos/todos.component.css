@@ -1,0 +1,26 @@
+h1 {
+  color: blue;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+input {
+  width: 39%;
+  margin: 0 0 0 5%;
+}
+
+input, button{
+  line-height: 2em;
+  padding: 0 0.5em;
+  font-size: 1.5em;
+  border-radius: 6px;
+  border: #ccc 1px solid;
+}
+
+button {
+  background-color: cadetblue;
+  color: #fff;
+}
